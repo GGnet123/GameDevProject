@@ -1,8 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-public class NotePickUp : Interactable
-{
+public class NotePickUp : Interactable{
 	public Note note;
 	public Image image1;
 	public Image image2;
@@ -15,14 +14,12 @@ public class NotePickUp : Interactable
 	public Image image9;
 	
 	public GameObject puzzleLayer;
-	public override void Interact()
-	{
+	public override void Interact(){
 		base.Interact();
 		pickUp();
 	}
 	
-	void pickUp() 
-	{
+	void pickUp() {
 		image1.sprite = note.image1;
 		image1.enabled = true;
 		image2.sprite = note.image2;
@@ -44,8 +41,7 @@ public class NotePickUp : Interactable
 		puzzleLayer.SetActive(true);
 		Debug.Log("Picking up " + note.name);
 		bool pickedUp = Diary.instance.Add(note);
-		if (pickedUp)
-		{
+		if (pickedUp){
 			gameObject.SetActive(false);
 		}
 	}
