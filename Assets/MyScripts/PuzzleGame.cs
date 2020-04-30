@@ -3,14 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PuzzleGame : MonoBehaviour
-{
+public class PuzzleGame : MonoBehaviour{
     [SerializeField]
     private Transform[] pictures;
-
     [SerializeField]
     private GameObject puzzleLayer;
-
     public GameObject exit;
 
     public static bool youWin;
@@ -23,17 +20,8 @@ public class PuzzleGame : MonoBehaviour
     public Button btn7;
     public Button btn8;
     public Button btn9;
-    // Start is called before the first frame update
-    void Start()
-    {
 
-        /*for (int i = 0; i < 8; i++)
-        {
-            int rnd = Random.Range(0, 3);
-            Debug.Log("random num: " + rnd);
-            int z = 90 * rnd;
-            pictures[i].Rotate(0f, 0f, z);
-        }*/
+    void Start(){
         btn1.onClick.AddListener(() => rotate(0));
         btn2.onClick.AddListener(() => rotate(1));
         btn3.onClick.AddListener(() => rotate(2));
@@ -45,10 +33,8 @@ public class PuzzleGame : MonoBehaviour
         btn9.onClick.AddListener(() => rotate(8));
         youWin = false;
         exit.SetActive(false);
-        Debug.Log("started");
-    }
-    void Update()
-    {
+        Debug.Log("started");}
+    void Update(){
         Debug.Log("rotation1: " + pictures[0].transform.eulerAngles.z);
         Debug.Log("rotation2: " + pictures[1].transform.eulerAngles.z);
         Debug.Log("rotation3: " + pictures[2].transform.eulerAngles.z);
@@ -66,15 +52,13 @@ public class PuzzleGame : MonoBehaviour
             pictures[5].transform.eulerAngles.z == 0 &&
             pictures[6].transform.eulerAngles.z == 0 &&
             pictures[7].transform.eulerAngles.z == 0 &&
-            pictures[8].transform.eulerAngles.z == 0)
-        {
+            pictures[8].transform.eulerAngles.z == 0){
             youWin = true;
             Debug.Log("You won");
             exit.SetActive(true);
         }
     }
-    void rotate(int i)
-    {
+    void rotate(int i){
         Debug.Log("image clicked");
         if (!youWin)
         {
