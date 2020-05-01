@@ -67,6 +67,7 @@
     <Compile Include="Assets\MyScripts\Diary.cs" />
     <Compile Include="Assets\MyScripts\DiaryContentController.cs" />
     <Compile Include="Assets\MyScripts\DiaryController.cs" />
+    <Compile Include="Assets\MyScripts\DoorController.cs" />
     <Compile Include="Assets\MyScripts\ExitBtn.cs" />
     <Compile Include="Assets\MyScripts\ExitPuzzle.cs" />
     <Compile Include="Assets\MyScripts\FlashLightController.cs" />

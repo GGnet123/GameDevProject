@@ -31,7 +31,6 @@ public class Diary : MonoBehaviour
 
 	public bool Add(Note note)
 	{
-				
 		notes.Add(note);
         
         if (onNoteChangedCallBack != null)

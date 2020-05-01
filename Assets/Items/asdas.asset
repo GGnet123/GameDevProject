@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5297172aafc1a5e42840bd17742e9537, type: 3}
+  m_Name: asdas
+  m_EditorClassIdentifier: 
+  name: asd
+  text: afafafafafaf
+  type: 2
+  image1: {fileID: 6437407932893608282, guid: ac77db91e484e1644b64b6d168280683, type: 3}
+  image2: {fileID: 646876447631137035, guid: ac77db91e484e1644b64b6d168280683, type: 3}
+  image3: {fileID: 4602576258931035082, guid: ac77db91e484e1644b64b6d168280683, type: 3}
+  image4: {fileID: -8058755234494367256, guid: ac77db91e484e1644b64b6d168280683, type: 3}
+  image5: {fileID: 2786014334376240800, guid: ac77db91e484e1644b64b6d168280683, type: 3}
+  image6: {fileID: -8893852315168168163, guid: ac77db91e484e1644b64b6d168280683, type: 3}
+  image7: {fileID: 6684230400249783134, guid: ac77db91e484e1644b64b6d168280683, type: 3}
+  image8: {fileID: 5205010817311967319, guid: ac77db91e484e1644b64b6d168280683, type: 3}
+  image9: {fileID: -27656858465336096, guid: ac77db91e484e1644b64b6d168280683, type: 3}
